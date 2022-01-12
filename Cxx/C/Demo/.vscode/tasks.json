@@ -1,0 +1,38 @@
+//预设的任务集
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "CxxBuild",//可以随便取的名字，一定要和launch中的"preLaunchTask"项保持一致
+            "command": "/usr/bin/gcc",//编译器（可执行文件）路径
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.out"
+            ],//例子 "/usr/bin/gcc" -g main.c -o "/Users/aaasyane/Developer/Workplace/Cxx/C/DataStructure/main.out"
+            "options": {
+                "cwd": "${workspaceFolder}"//当前路径
+            },
+            "problemMatcher": [
+                "$gcc"//使用gcc捕捉错误
+            ],
+            "group": {
+                "kind": "build",//当你在vscode中执行build命令（或Tasks: Run Build Task (Ctrl+Shift+B)）时，就能自动执行"command"中的命令了
+                "isDefault": true
+            },
+            "detail": "通过Debugger产生的Cpp编译器的任务."//一些描述性信息
+        },
+        {
+            "type":"shell",//运行task的平台，一般是shell
+            "label": "ShellRun",
+            "command":"bash ./build.sh",//在此处就是普通的shell命令，运行你的.sh文件
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "none",
+            "detail": "通过Debugger产生的CMake编译任务."
+        }
+    ],
+    "version": "2.0.0"
+}

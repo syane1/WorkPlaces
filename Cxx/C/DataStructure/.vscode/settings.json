@@ -1,0 +1,45 @@
+//工作文件夹的设置文件
+{
+    "git.ignoreLimitWarning": true,
+    "files.associations": {
+        "linklist.h": "c",
+        "seqstack.h": "c",
+        "string_view": "c",
+        "seqqueue.h": "c",
+        "linkstack.h": "c",
+        "array": "c",
+        "string": "c",
+        "*.tcc": "c",
+        "seqlist.h": "c",
+        "linkqueue.h": "c",
+        "btree.h": "c",
+        "global_inc.h": "c",
+        "seqstring.h": "c",
+        "global_head.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.autoGuessEncoding": true,
+    "cmake.additionalKits": [
+        "/usr/local/bin/x86_64-apple-darwin20-gcc-11",
+        "/usr/local/bin/x86_64-apple-darwin20-g++-11",
+        "/usr/local/bin/gcc-11",
+        "/usr/local/bin/g++-11"
+    ],
+    "cmake.cmakePath": "/usr/local/bin/cmake",
+    // "cmake.debugConfig": {
+    //     "args": [],
+    //     "cwd": "${workspaceFolder}",
+    //     "externalConsole": true,
+    //     "environment": [],
+    //     "MIMode": "gdb",
+    //     "miDebuggerPath": "/usr/local/bin/gdb",
+    //     "setupCommands": [
+    //         {
+    //             "description": "让GDB能更好看地打印",
+    //             "text": "-enable-pretty-printing",
+    //             "ignoreFailures": true
+    //         }
+    //     ],
+    //     "stopAtEntry": false
+    // },
+}

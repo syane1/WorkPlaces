@@ -1,0 +1,30 @@
+{
+    "git.ignoreLimitWarning": true,
+    "editor.semanticTokenColorCustomizations": {
+        "[One Dark Pro]": { // Apply to this theme only
+            "enabled": true,
+            "rules": {
+                "magicFunction:python": "#ee0000",
+                "function.declaration:python": "#990000",
+                "*.decorator:python": "#0000dd",
+                "*.typeHint:python": "#5500aa",
+                "*.typeHintComment:python": "#aaaaaa"
+            }
+        }
+    },
+    "python.analysis.diagnosticMode": "workspace",
+    "python.defaultInterpreterPath": "${workspaceFolder}/Python/3.10.0/python.exe",
+    "python.languageServer": "Pylance",
+    "python.analysis.extraPaths": [
+        "./src",
+        "./modules",
+        "./util"
+    ],
+    "python.autoComplete.extraPaths": [
+        "./src",
+        "./modules",
+        "./util",
+        "${workspaceFolder}/Python/3.10.0/Lib/site-packages",
+        "${workspaceFolder}/Python/3.7.8/Lib/site-packages"
+    ],
+}

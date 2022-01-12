@@ -1,0 +1,98 @@
+[
+    //"Windows"：文件夹目录为C:\\Workplace
+    {
+        "ProjectManager":
+        [
+            {
+                "name": "C_Projects",
+                "rootPath": "C:\\Workplace\\Cxx\\C",
+                "paths": [],
+                "group": "Cxx",
+                "enabled": true
+            },
+            {
+                "name": "Cpp_Projects",
+                "rootPath": "C:\\Workplace\\Cxx\\C++",
+                "paths": [],
+                "group": "Cxx",
+                "enabled": true
+            },
+            {
+                "name": "Py_Projects",
+                "rootPath": "C:\\Workplace\\Py",
+                "paths": [],
+                "group": "Py",
+                "enabled": true
+            },
+            {
+                "name": "Cxx_MakeDemos",
+                "rootPath": "C:\\Workplace\\Cxx\\CMakeDemos",
+                "paths": [],
+                "group": "Cxx",
+                "enabled": true
+            },
+            {
+                "name": "4gl",
+                "rootPath": "C:\\Workplace\\4gl",
+                "paths": [],
+                "group": "Others",
+                "enabled": true
+            },
+            {
+                "name": "ROOT",
+                "rootPath": "C:\\Workplace",
+                "paths": [],
+                "group": "Others",
+                "enabled": true
+            }
+        ]
+    },
+    //”Mac“：文件夹目录为/Users/aaasyane/Developer
+    {
+        "ProjectManager":
+        [
+            {
+                "name": "C_Projects",
+                "rootPath": "~/Developer/Workplace/Cxx/C",
+                "paths": [],
+                "group": "Cxx",
+                "enabled": true
+            },
+            {
+                "name": "Cpp_Projects",
+                "rootPath": "~/Developer/Workplace/Cxx/C++",
+                "paths": [],
+                "group": "Cxx",
+                "enabled": true
+            },
+            {
+                "name": "Py_Projects",
+                "rootPath": "~/Developer/Workplace/Py",
+                "paths": [],
+                "group": "Py",
+                "enabled": true
+            },
+            {
+                "name": "Cxx_MakeDemos",
+                "rootPath": "~/Developer/Workplace/Cxx/CMakeDemos",
+                "paths": [],
+                "group": "Cxx",
+                "enabled": true
+            },
+            {
+                "name": "4gl",
+                "rootPath": "~/Developer/Workplace/4gl",
+                "paths": [],
+                "group": "Others",
+                "enabled": true
+            },
+            {
+                "name": "ROOT",
+                "rootPath": "~/Developer/Workplace/Cxx/",
+                "paths": [],
+                "group": "Others",
+                "enabled": true
+            }
+        ]
+    }
+]

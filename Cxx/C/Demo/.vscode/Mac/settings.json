@@ -1,0 +1,22 @@
+//工作文件夹的设置文件
+{
+    "git.ignoreLimitWarning": true,
+    "files.associations": {
+        "linklist.h": "c",
+        "seqstack.h": "c",
+        "string_view": "c",
+        "seqqueue.h": "c",
+        "linkstack.h": "c",
+        "array": "c",
+        "string": "c",
+        "*.tcc": "c",
+        "seqlist.h": "c",
+        "linkqueue.h": "c",
+        "btree.h": "c"
+    },
+    //"cmake.sourceDirectory": "${workspaceFolder}/DataStructure",
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.autoGuessEncoding": true,
+    
+    //"cmake.generator": "/usr/local/bin/cmake"
+}

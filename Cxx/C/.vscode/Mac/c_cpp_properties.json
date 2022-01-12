@@ -1,0 +1,30 @@
+//C\C++的相关配置文件
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            //库头文件包含路径，可以进行相关头文件提醒
+            "includePath": [
+                "${workspaceFolder}/Include/**"
+            ],
+            "browse": {
+                //或者使用这个设置亦可包含头文件
+                "path": [
+                    "${workspaceFolder}/DataStructure/Include/**"
+                ]
+            },
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "macos-clang-x64",
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json",//添加cmaker生成的compile_commands.json
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,54 @@
+//C\C++的相关配置文件 右下角可以切换Mac/Win32
+{
+    "configurations": [
+        {
+            "name": "Mac-gcc",
+            //库头文件包含路径，可以进行相关头文件提醒
+            "includePath": [
+                "${workspaceFolder}/Include/**"
+            ],
+            "browse": {
+                //或者使用这个设置亦可包含头文件
+                "path": []
+            },
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "/usr/local/bin/x86_64-apple-darwin20-gcc-11",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "macos-gcc-x64",
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json",//添加cmaker生成的compile_commands.json
+            "configurationProvider": "ms-vscode.cmake-tools"//如在CMakeLists.txt中配置了 link_directories(dir_xx)命令，VS Code就能正确识别出 #Include<dir_xx/xxx.h>头文件。同时也就取代了上面的 includePath配置。
+        },
+        {
+            "name": "Win32",
+            //库头文件包含路径，可以进行相关头文件提醒
+            "includePath": [
+                "${fileDirname}/Include",
+                "${workspaceFolder}/Include/**"
+            ],
+            "browse": {
+                //或者使用这个设置亦可包含头文件
+                "path": [
+                    "${workspaceFolder}/DataStructure/Include/**"
+                ]
+            },
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.17763.0",
+            "compilerPath": "C:/Workplace/MinGW/bin/gcc.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-gcc-x64",
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json",//添加cmaker生成的compile_commands.json
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}
