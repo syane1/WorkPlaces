@@ -1,49 +1,70 @@
 [
     //"Windows"：文件夹目录为C:\\Workplace
     {
-        "ProjectManager":
-        [
+        "ProjectManager":[
             {
-                "name": "C_Projects",
-                "rootPath": "C:\\Workplace\\Cxx\\C",
+                "name": "C_ROOT",
+                "rootPath": "C:\\WorkPlaces\\Cxx\\C",
                 "paths": [],
-                "group": "Cxx",
-                "enabled": true
+                "group": "Cxx\\C",
+                "enabled": true,
+                "tags":["C","Cxx"]
             },
             {
-                "name": "Cpp_Projects",
-                "rootPath": "C:\\Workplace\\Cxx\\C++",
+                "name": "C_DataStructure",
+                "rootPath": "C:\\WorkPlaces\\Cxx\\C\\Datastructure",
                 "paths": [],
-                "group": "Cxx",
-                "enabled": true
+                "group": "Cxx\\C",
+                "enabled": true,
+                "tags":["C","Cxx"]
             },
             {
-                "name": "Py_Projects",
-                "rootPath": "C:\\Workplace\\Py",
+                "name": "C_Demo",
+                "rootPath": "C:\\WorkPlaces\\Cxx\\C\\Demo",
                 "paths": [],
-                "group": "Py",
-                "enabled": true
+                "group": "Cxx\\C",
+                "enabled": true,
+                "tags":["Demo","C","Cxx"]
+            },
+            {
+                "name": "Cpp_ROOT",
+                "rootPath": "C:\\WorkPlaces\\Cxx\\C++",
+                "paths": [],
+                "group": "Cxx",
+                "enabled": true,
+                "tags":["ROOT","C++","Cxx"]
             },
             {
                 "name": "Cxx_MakeDemos",
-                "rootPath": "C:\\Workplace\\Cxx\\CMakeDemos",
+                "rootPath": "C:\\WorkPlaces\\Cxx\\CMakeDemos",
                 "paths": [],
                 "group": "Cxx",
-                "enabled": true
+                "enabled": true,
+                "tags":["Demo","Cxx"]
             },
             {
                 "name": "4gl",
-                "rootPath": "C:\\Workplace\\4gl",
+                "rootPath": "C:\\WorkPlaces\\4gl",
                 "paths": [],
                 "group": "Others",
-                "enabled": true
+                "enabled": true,
+                "tags":["Other","fgl"]
+            },
+            {
+                "name": "Py_Root",
+                "rootPath": "C:\\WorkPlaces\\Py",
+                "paths": [],
+                "group": "Py",
+                "enabled": true,
+                "tags":["ROOT","Python"]
             },
             {
                 "name": "ROOT",
-                "rootPath": "C:\\Workplace",
+                "rootPath": "C:\\WorkPlaces",
                 "paths": [],
                 "group": "Others",
-                "enabled": true
+                "enabled": true,
+                "tags":["ROOT"]
             }
         ]
     },
@@ -52,46 +73,68 @@
         "ProjectManager":
         [
             {
-                "name": "C_Projects",
-                "rootPath": "~/Developer/Workplace/Cxx/C",
+                "name": "C_ROOT",
+                "rootPath": "~/Developer/WorkPlaces/Cxx/C",
                 "paths": [],
-                "group": "Cxx",
-                "enabled": true
+                "group": "Cxx/C",
+                "enabled": true,
+                "tags":["C","Cxx"]
             },
             {
-                "name": "Cpp_Projects",
-                "rootPath": "~/Developer/Workplace/Cxx/C++",
+                "name": "C_DataStructure",
+                "rootPath": "~/Developer/WorkPlaces/Cxx/C/Datastructure",
                 "paths": [],
-                "group": "Cxx",
-                "enabled": true
+                "group": "Cxx/C",
+                "enabled": true,
+                "tags":["C","Cxx"]
             },
             {
-                "name": "Py_Projects",
-                "rootPath": "~/Developer/Workplace/Py",
+                "name": "C_Demo",
+                "rootPath": "~/Developer/WorkPlaces/Cxx/C/Demo",
                 "paths": [],
-                "group": "Py",
-                "enabled": true
+                "group": "Cxx/C",
+                "enabled": true,
+                "tags":["Demo","C","Cxx"]
+            },
+            {
+                "name": "Cpp_ROOT",
+                "rootPath": "~/Developer/WorkPlaces/Cxx/C++",
+                "paths": [],
+                "group": "Cxx",
+                "enabled": true,
+                "tags":["ROOT","C++","Cxx"]
             },
             {
                 "name": "Cxx_MakeDemos",
-                "rootPath": "~/Developer/Workplace/Cxx/CMakeDemos",
+                "rootPath": "~/Developer/WorkPlaces/Cxx/CMakeDemos",
                 "paths": [],
                 "group": "Cxx",
-                "enabled": true
+                "enabled": true,
+                "tags":["Demo","Cxx"]
             },
             {
                 "name": "4gl",
-                "rootPath": "~/Developer/Workplace/4gl",
+                "rootPath": "~/Developer/WorkPlaces/4gl",
                 "paths": [],
                 "group": "Others",
-                "enabled": true
+                "enabled": true,
+                "tags":["Other","fgl"]
+            },
+            {
+                "name": "Py_Root",
+                "rootPath": "~/Developer/WorkPlaces/Py",
+                "paths": [],
+                "group": "Py",
+                "enabled": true,
+                "tags":["ROOT","Python"]
             },
             {
                 "name": "ROOT",
-                "rootPath": "~/Developer/Workplace/Cxx/",
+                "rootPath": "~/Developer/WorkPlaces",
                 "paths": [],
                 "group": "Others",
-                "enabled": true
+                "enabled": true,
+                "tags":["ROOT"]
             }
         ]
     }
