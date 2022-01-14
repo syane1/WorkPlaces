@@ -11,11 +11,10 @@ project(DsMain VERSION 0.1.0 LANGUAGES C CXX)
 #add_definitions("-Wall -g")
 set(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -g -ggdb")
 set(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")
-
 set(DSLIB ${PROJECT_SOURCE_DIR}/DsLib)
 
-add_subdirectory(DsLib)
-include_directories(${DSLIB}/Include )
+add_subdirectory(${DSLIB})
+include_directories(${DSLIB}/Include)
 
 set(MAIN_PREFIX "main")
 
@@ -27,7 +26,6 @@ target_link_libraries(${PROJECT_NAME}
     LIB_DS
 )
 
-
 install(TARGETS ${PROJECT_NAME} LIB_DS
     RUNTIME DESTINATION ${PROJECT_SOURCE_DIR}/bin           #可执行二进制安装到${PROJECT_SOURCE_DIR}/bin目录
     LIBRARY DESTINATION ${PROJECT_SOURCE_DIR}/lib           #动态库安装到${PROJECT_SOURCE_DIR}/lib目录
@@ -36,6 +34,6 @@ install(TARGETS ${PROJECT_NAME} LIB_DS
 )
 
 set_target_properties(${PROJECT_NAME} 
-    #PROPERTIES PREFIX "" SUFFIX ".out" #前缀为空 后缀为.out
+    #PROPERTIES PREFIX "EXE" SUFFIX ".out" #前缀为EXE 后缀为.out 例如EXEmain.out
     PROPERTIES OUTPUT_NAME ${MAIN_PREFIX}.out#直接改名为main.out
 )

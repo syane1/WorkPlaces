@@ -5,11 +5,13 @@ project(LIB_DS)
 # 如果代码需要支持C++11，就直接加上这句
 #set(CMAKE_CXX_STANDARD 11)
 
-aux_source_directory(${PROJECT_SOURCE_DIR}/src SRCS)
+SET(LIBDS_SRC_DIR ${PROJECT_SOURCE_DIR}/src)
+SET(LIBDS_INC_DIR ${PROJECT_SOURCE_DIR}/Include)
 
-add_library(${PROJECT_NAME} STATIC ${SRCS})
+aux_source_directory(${LIBDS_SRC_DIR} LIBDS_SRC_FILES)
 
-include_directories(${PROJECT_SOURCE_DIR}/Include )
+add_library(${PROJECT_NAME} STATIC ${LIBDS_SRC_FILES})
+include_directories(${LIBDS_INC_DIR})
 
 #链接编译好的库
 #link_directories(${PROJECT_SOURCE_DIR}/../lib)

@@ -26,20 +26,4 @@
         "/usr/local/bin/g++-11"
     ],
     "cmake.cmakePath": "/usr/local/bin/cmake",
-    // "cmake.debugConfig": {
-    //     "args": [],
-    //     "cwd": "${workspaceFolder}",
-    //     "externalConsole": true,
-    //     "environment": [],
-    //     "MIMode": "gdb",
-    //     "miDebuggerPath": "/usr/local/bin/gdb",
-    //     "setupCommands": [
-    //         {
-    //             "description": "让GDB能更好看地打印",
-    //             "text": "-enable-pretty-printing",
-    //             "ignoreFailures": true
-    //         }
-    //     ],
-    //     "stopAtEntry": false
-    // },
 }

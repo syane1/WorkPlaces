@@ -1,9 +1,9 @@
 #!/bin/bash
 
 if [ ! -d "build" ]; then
-    mkdir ../build
+    mkdir /build
 else
-    rm -rf ../build/* bin/* lib/*
+    rm -rf /build/* bin/* lib/*
 fi
 
 cd build
