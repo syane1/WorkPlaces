@@ -151,5 +151,5 @@
 
 # Folders
 /C**/build/
-/C**/MinGW/
+!/C**/MinGW/
 /Py**/Lib/site- packages/
