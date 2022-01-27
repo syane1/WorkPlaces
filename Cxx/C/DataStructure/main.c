@@ -4,8 +4,8 @@
 int main()
 {
     int sel;
-    printf("请输入一个测试项:(11:SeqList\t12:LinkList\t21:SeqStack\t22:LinkStack\t31:LinkQueue\t32:SeqQueue\n");
-    printf("41:SeqString\tothers:exit)\n");
+    printf("请输入一个测试项:(11:顺序表SeqList\t12:(单)链表LinkList\t21:顺序栈SeqStack\t22:链栈LinkStack\t31:链式队列LinkQueue\t32:顺序队列SeqQueue\n");
+    printf("41:顺序串SeqString\tothers:exit)\n");
     while(scanf("%d",&sel))
     {
         switch (sel)

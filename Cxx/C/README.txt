@@ -1,5 +1,7 @@
 
 MacOS：
+0.若不想安装XCode（报错内容：xcrun: error: invalid active developer path (/Library/Developer/CommandLineT……）
+    xcode-select --install
 1.安装brew
     /bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
 2.安装CMake
