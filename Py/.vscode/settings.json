@@ -13,7 +13,7 @@
         }
     },
     "python.analysis.diagnosticMode": "workspace",
-    "python.defaultInterpreterPath": "${workspaceFolder}/Python/3.10.0/python.exe",
+    "python.defaultInterpreterPath": "${workspaceFolder}/Python/3.10.0/python310.exe",
     "python.languageServer": "Pylance",
     "python.analysis.extraPaths": [
         "./src",
@@ -27,4 +27,5 @@
         "${workspaceFolder}/Python/3.10.0/Lib/site-packages",
         "${workspaceFolder}/Python/3.7.8/Lib/site-packages"
     ],
+    "python.analysis.typeCheckingMode": "basic",
 }

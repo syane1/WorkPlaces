@@ -5,7 +5,7 @@ System Enviroment:
 PYTHONIOENCODING=utf-8
 
 PATH:
-C:\Workplace\Py\Python\3.7.8
-                Python\3.7.8\Scripts
-C:\Workplace\Py\Python\3.10.0
-                Python\3.10.0\Scripts
+C:\Workplaces\Py\Python\3.7.8
+                 Python\3.7.8\Scripts
+C:\Workplaces\Py\Python\3.10.0
+                 Python\3.10.0\Scripts
