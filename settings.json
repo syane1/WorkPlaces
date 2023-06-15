@@ -138,4 +138,74 @@
             }
         ]
     }
+    //”Linux“：文件夹目录为/Users/aaasyane/Developer
+    {
+        "ProjectManager":
+        [
+            {
+                "name": "C_ROOT",
+                "rootPath": "~/WorkPlaces/Cxx/C",
+                "paths": [],
+                "group": "Cxx/C",
+                "enabled": true,
+                "tags":["C","Cxx"]
+            },
+            {
+                "name": "C_DataStructure",
+                "rootPath": "~/WorkPlaces/Cxx/C/Datastructure",
+                "paths": [],
+                "group": "Cxx/C",
+                "enabled": true,
+                "tags":["C","Cxx"]
+            },
+            {
+                "name": "C_Demo",
+                "rootPath": "~/WorkPlaces/Cxx/C/Demo",
+                "paths": [],
+                "group": "Cxx/C",
+                "enabled": true,
+                "tags":["Demo","C","Cxx"]
+            },
+            {
+                "name": "Cpp_ROOT",
+                "rootPath": "~/WorkPlaces/Cxx/C++",
+                "paths": [],
+                "group": "Cxx",
+                "enabled": true,
+                "tags":["ROOT","C++","Cxx"]
+            },
+            {
+                "name": "Cxx_MakeDemos",
+                "rootPath": "~/Cxx/CMakeDemos",
+                "paths": [],
+                "group": "Cxx",
+                "enabled": true,
+                "tags":["Demo","Cxx"]
+            },
+            {
+                "name": "4gl",
+                "rootPath": "~/WorkPlaces/4gl",
+                "paths": [],
+                "group": "Others",
+                "enabled": true,
+                "tags":["Other","fgl"]
+            },
+            {
+                "name": "Py_Root",
+                "rootPath": "~/WorkPlaces/Py",
+                "paths": [],
+                "group": "Py",
+                "enabled": true,
+                "tags":["ROOT","Python"]
+            },
+            {
+                "name": "ROOT",
+                "rootPath": "~/WorkPlaces",
+                "paths": [],
+                "group": "Others",
+                "enabled": true,
+                "tags":["ROOT"]
+            }
+        ]
+    }
 ]
