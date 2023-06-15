@@ -18,7 +18,8 @@
     "python.analysis.extraPaths": [
         "./src",
         "./modules",
-        "./util"
+        "./util",
+        "./Python/3.7.8/Lib/site-packages"
     ],
     "python.autoComplete.extraPaths": [
         "./src",
