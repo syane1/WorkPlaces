@@ -12,6 +12,7 @@ import subprocess
 current_dir = os.path.dirname(os.path.abspath(__file__))
 cache_dir_name = "src"
 sb_img_name = "sb.png"
+sb1_img_name = "sb1.png"
 bt_img_name = "bt.png"
 sc_img_name = "screenshot.png"
 app_path = r"D:\lebo\PCCast\PCCast.exe"
@@ -65,6 +66,9 @@ def main():
     temp_selectbox = cv2.cvtColor(temp_selectbox, cv2.COLOR_RGB2BGR)
     if temp_selectbox is None:
         raise ValueError("无'AqCast'列表选项截图,本目录下"+cache_dir_name+"/"+sb_img_name)
+    temp_selectbox1 = cv2.imread(os.path.join(src_dir,sb1_img_name), 0)
+    temp_selectbox1 = cv2.cvtColor(temp_selectbox1, cv2.COLOR_RGB2BGR)
+    #这个有没有都无所谓，所以不做判空报错
     temp_botton = cv2.imread(os.path.join(src_dir,bt_img_name), 0)
     temp_botton = cv2.cvtColor(temp_botton, cv2.COLOR_RGB2BGR)
     if temp_botton is None:
@@ -76,16 +80,22 @@ def main():
     # 在屏幕截图中查找图像
     try:
         max_loc_sb, max_loc_bt = get_locs(screenshot, temp_selectbox, temp_botton)
+        max_loc_sb1, max_loc_bt = get_locs(screenshot, temp_selectbox1, temp_botton)
     except:
         screenshot = get_screenshot()
         max_loc_sb, max_loc_bt = get_locs(screenshot, temp_selectbox, temp_botton)
+        max_loc_sb1, max_loc_bt = get_locs(screenshot, temp_selectbox1, temp_botton)
 
     # 获取图像的位置
     x_sb, y_sb = max_loc_sb
+    x_sb1, y_sb1 = max_loc_sb1
     x_bt, y_bt = max_loc_bt
 
     # 点击找到的图像
     pyautogui.click(x_sb, y_sb)
+    pyautogui.click(x_bt, y_bt)
+    time.sleep(2)
+    pyautogui.click(x_sb1, y_sb1)
     pyautogui.click(x_bt, y_bt)
 
     del_cacheimg()

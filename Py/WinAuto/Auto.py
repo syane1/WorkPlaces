@@ -7,3 +7,4 @@ dlg = Desktop(backend="uia").window(title="PCCast")
 time.sleep(1)
 for ctrl in app.descendants():
     print("Control:", ctrl.window_text(), ctrl.control_type)
+    
