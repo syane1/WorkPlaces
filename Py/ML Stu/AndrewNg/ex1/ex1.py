@@ -63,9 +63,11 @@ def gradientDescent(X,y,theta,alpha,iters):
         error = (X*theta.T) - y
 
         for j in range(parameters):
-            #求偏导数,即期望值与实际值的误差*X,求和,再除于X的个数
+            #求第j个特征的偏导数,即期望值与实际值的误差*X,求和,再除于X的个数
             term = np.multiply(error,X[:,j])
-            temp[0,j] = theta[0,j] - (alpha/len(X)*np.sum(term))
+            partialDerivative = 1/len(X)*np.sum(term)
+            #加减梯度下降的量
+            temp[0,j] = theta[0,j] - alpha*partialDerivative
         
         #将当前步骤求出的偏导数还给theta,从而让它可以选择下一步梯度下降的方向和大小
         theta = temp
